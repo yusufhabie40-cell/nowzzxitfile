@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowzz Xit - Free Fire VVIP Files | Space Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background: linear-gradient(135deg, #0c0c1e 0%, #1a0033 50%, #000428 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Animated Background Stars */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.3; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            z-index: 10;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-family: 'Orbitron', monospace;
+            font-size: 28px;
+            font-weight: 900;
+            background: linear-gradient(45deg, #00ffff, #ff00ff, #ffff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px 60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px #00ffff); }
+            to { filter: drop-shadow(0 0 30px #ff00ff); }
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Products Grid */
+        .products {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-family: 'Orbitron', monospace;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .product-card:hover::before {
+            left: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 255, 255, 0.3);
+            border-color: #00ffff;
+        }
+
+        .product-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+        }
+
+        .product-card h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #00ffff;
+        }
+
+        .product-card .price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ff00ff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+
+        .buy-btn {
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            color: #000;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Orbitron', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
+        }
+
+        .buy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 255, 255, 0.6);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border-top: 1px solid rgba(0, 255, 255, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background: linear-gradient(45deg, #25d366, #128c7e);
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .hero {
+                padding: 60px 20px 40px;
+            }
+        }
+
+        /* Responsive Stars */
+        @media (max-width: 768px) {
+            .star:nth-child(n) {
+                animation-duration: 1.5s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Stars Background -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-rocket"></i> NOWZZ XIT
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Free Fire VVIP Files</h1>
+        <p>Premium Space Edition - Unlock the ultimate gaming experience with our exclusive collection of high-performance files. Limited stock available!</p>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2><i class="fas fa-gem"></i> Premium Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Aim Body</h3>
+                <div class="price">VVIP</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-mouse-pointer"></i>
+                </div>
+                <h3>Drag HS Premium</h3>
+                <div class="price">VVIP</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-crosshairs"></i>
+                </div>
+                <h3>Drag HS 70%</h3>
+                <div class="price">Premium</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3>Glowall Gepeng</h3>
+                <div class="price">Elite</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-lock-open"></i>
+                </div>
+                <h3>Aimlock 97% V3</h3>
+                <div class="price">VVIP</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3>Extreme HS 85%</h3>
+                <div class="price">Pro</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Aimbot 70%</h3>
+                <div class="price">Premium</div>
+                <button class="buy-btn" onclick="buyNow()">
+                    <i class="fab fa-whatsapp"></i> Beli Sekarang
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Nowzz Xit. All Rights Reserved | Premium Space Gaming Files</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6285353382404?text=Saya%20mau%20beli%20file%20Free%20Fire%20VVIP%20dari%20Nowzz%20Xit%20🚀" 
+       class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Create animated stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = star.style.height = (Math.random() * 3 + 1) + 'px';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Buy now function
+        function buyNow() {
+            window.open('https://wa.me/6285353382404?text=Saya%20mau%20beli%20file%20Free%20Fire%20VVIP%20dari%20Nowzz%20Xit%20🚀', '_blank');
+        }
+
+        // Initialize
+        window.addEventListener('load', createStars);
+
+        // Smooth scroll and animations
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach((card, index) => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < window.innerHeight - 100) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
